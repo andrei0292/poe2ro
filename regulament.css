@@ -1,0 +1,17 @@
+
+.container{
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.249);
+    width:80%;
+    overflow-y: scroll;
+    padding: 5% 10%;
+    
+
+}
+p,ol,li,h2,h3,h4{
+    
+    color: white;
+    text-align: justify;
+    font-weight: 400;
+    
+}

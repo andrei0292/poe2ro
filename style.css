@@ -1,0 +1,227 @@
+@font-face {
+    font-family: "OptimusPrincepsSemiBold";
+    src:
+            url("/assets/font/OptimusPrincepsSemiBold.ttf") 
+    
+  }
+  :root{
+    --shadow-light: 0px 0px 3px rgba(255, 239, 154, .3);
+    --shadow-dark: 1px 1px 4px rgba(0, 0, 0);
+    --shadow-dark-lg: 0 4px 16px rgb(0, 0, 0);
+    --shadow-inset: inset 0 1px 2px rgb(0 0 0 / 40%), inset 0 1px 1px rgb(0 0 0 / 20%), inset 0 2px 2px rgb(0 0 0 / 20%);
+    --animation-speed-quick: .1s;
+    --animation-speed-normal: .3s;
+    --animation-speed-slow: .6s;
+    --space-xs: .25rem;
+    --space-sm: .5rem;
+    --space-md: .75rem;
+    --space-lg: 1rem;
+    --space-xl: 1.5rem;
+    
+  }
+
+
+
+
+  @media (max-width: 960px) {
+    .ea-page-banner {
+        background: url(/assets/pics/banner_1_1x.webp) center center;
+        background-size: cover;
+    }
+}
+.ea-page-banner {
+    margin-top: -220px;
+    padding-top: 300px;
+    background: linear-gradient(to right, #000 calc(50% - 960px), transparent calc(50% - 860px), transparent calc(50% + 860px), #000 calc(50% + 960px)), url(/assets/pics/banner_1_1x.webp);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding-bottom: min(10vw, 130px);
+    margin-bottom: -30px;
+    box-sizing: border-box;
+    min-height: 900px;
+}
+
+.ea-page-banner__content:before {
+    content: attr(data-text);
+    display: block;
+    width: 100%;
+    position: absolute;
+    text-shadow: 0px 0 10px #000,5px 0 5px #000,0px 0 5px #000;
+    left: 50%;
+    transform: translate(-50%);
+    top: 0;
+    text-align: center;
+    color: transparent
+}
+.ea-page-banner__content {
+    position: relative;
+    margin-top: min(210px, 16vw);
+    text-align: center;
+    font-family: var(--font-family-optimus-semibold), serif;
+    font-size: min(7vw, 3.5rem);
+
+  
+}
+
+.ea-page-banner__content>* {
+    position: relative;
+    font-family: "OptimusPrincepsSemiBold", "Cinzel", "Noto Sans JP", Verdana, Arial, Helvetica, sans-serif;
+    background-image: url(/assets/pics/text-bg.webp);
+    background-repeat: repeat;
+    background-size: calc(min(7vw, 3.5rem) / .8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    
+}
+
+
+
+.poe2-platform-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-xl);
+} 
+.ea-page-banner__platform-links{
+    margin: 4rem 0 2rem;
+}
+.poe2-button-gold{
+box-sizing: border-box;
+position: relative;
+padding: 4px 2rem 0;
+margin: 1rem 3rem;
+border-image-source: url(/assets/pics/gold-button.webp);
+border-image-slice: 5 10 5 fill;
+border-image-width: 5 10 5;
+border-image-outset: 10px 40px 12px;
+min-height: 40px;
+display: flex;
+flex-direction: column;
+
+
+}
+
+.poe2-button-gold :before{
+    content: "";
+    position: absolute;
+    height: calc(100% + 42px);
+    top: -20px;
+    left: -40px;
+    width: calc(100% + 80px);
+    display: block;
+    background-image: url(/assets/pics/gold-button-notches.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+.poe2-platform-links__link{
+font-size: 1.4rem;
+font-weight: 800;
+font-family: serif;
+letter-spacing: -1px;
+background: linear-gradient(180deg,#0e1018,#36424e);
+line-height: 1.2;
+background-size: 100% 2.4rem;
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color:#36424e;
+-webkit-text-stroke: .5px rgba(0,0,0,.8);
+text-decoration: none; 
+
+}
+.poe2-button-gold:hover {
+    filter: brightness(1.2)
+}
+
+
+/* buton rosu */
+.ea-page-banner__access-now {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    z-index: 1;
+}
+.poe2-button-crimson__container {
+    overflow: hidden;
+    position: relative;
+    display: flex
+;
+}
+.poe2-button-crimson__container {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+.poe2-button-crimson__underlay {
+    display: block;
+    position: absolute;
+    height: 140px;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translate(-50%);
+    width: 120%;
+    background-image: url(/assets/pics/early-access-button-underlay.webp);
+    background-size: 100% 100%;
+    pointer-events: none;
+    max-width: 900px;
+}
+.poe2-button-crimson__underlay {
+    display: block;
+    position: absolute;
+    height: 140px;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translate(-50%);
+    width: 120%;
+    background-image: url(/assets/pics/early-access-button-underlay.webp);
+    background-size: 100% 100%;
+    pointer-events: none;
+    max-width: 900px;
+}
+.poe2-button-crimson {
+    box-sizing: border-box;
+    position: relative;
+    padding: 7px 2rem;
+    margin: 2rem auto;
+    border-image-source: url(/assets/pics/early-access-button.webp);
+    border-image-slice: 5 10 5 fill;
+    border-image-width: 5 10 5;
+    border-image-outset: 10px 40px 12px;
+    min-height: 40px;
+}
+.poe2-button-general, .poe2-button-gold, .poe2-button-ornate, .poe2-button-crimson {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+.poe2-button-crimson__text {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    font-size: 2rem;
+    font-family: var(--font-family-optimus-semibold), serif;
+    background: linear-gradient(180deg, #bcb641, #fff4b4 72.17%, #fff);
+    line-height: 1.2;
+    background-size: 100% 2.4rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: .05px rgba(255, 244, 180, .8);
+}
+.poe2-button-crimson:hover {
+    filter: brightness(1.2)
+}
+
+.icon_link{
+    width: 30px;
+    padding: 5px 0;
+}
+#icon_crimm{
+    filter: invert(99%) sepia(4%) saturate(3501%) hue-rotate(325deg) brightness(93%) contrast(87%);
+}
+
